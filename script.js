@@ -51,19 +51,6 @@ function data(result, word) {
       exampleClass.innerHTML = definitions.example;
     }
 
-    // Synonyms
-    // let synonyms = result[0].meanings[0].synonyms;
-    // let synonymsTag = document.querySelector(".content .synonyms");
-    // synonymsTag.innerHTML = "";
-    // if (synonyms.length == 0) {
-    //   document.querySelector(".content #synonyms").style.display = "none";
-    // } else {
-    //   document.querySelector(".content #synonyms").style.display = "block";
-    //   for (let i = 0; i < result[0].meanings[0].synonyms.length; i++) {
-    //     synonymsTag.innerHTML += `${synonyms[i]}, `;
-    //   }
-    // }
-
     let synonyms = result[0].meanings[0].synonyms;
     let synonymsTag = document.querySelector(".content .synonyms");
     synonymsTag.innerHTML = "";
